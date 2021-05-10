@@ -1,6 +1,10 @@
 import json
-import csv_to_json
+from csvtojson import csv2json
 from zoomus import ZoomClient
+
+csvFilePath = r'members.csv'
+jsonFilePath = r'members.json'
+csv2json(csvFilePath, jsonFilePath)
 
 with open('members.json') as json_file:
     members = json.load(json_file)

@@ -1,7 +1,7 @@
 import csv 
 import json 
 
-def csv_to_json(csvFilePath, jsonFilePath):
+def csv2json(csvFilePath, jsonFilePath):
     jsonArray = []
       
     #read csv file
@@ -19,7 +19,3 @@ def csv_to_json(csvFilePath, jsonFilePath):
         jsonString = json.dumps(jsonArray, indent=4)
         jsonString = jsonString.lower()
         jsonf.write(jsonString)
-          
-csvFilePath = r'members.csv'
-jsonFilePath = r'members.json'
-csv_to_json(csvFilePath, jsonFilePath)

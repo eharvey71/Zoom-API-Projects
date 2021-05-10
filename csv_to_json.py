@@ -17,32 +17,9 @@ def csv_to_json(csvFilePath, jsonFilePath):
     #convert python jsonArray to JSON String and write to file
     with open(jsonFilePath, 'w', encoding='utf-8') as jsonf: 
         jsonString = json.dumps(jsonArray, indent=4)
+        jsonString = jsonString.lower()
         jsonf.write(jsonString)
           
-csvFilePath = r'data.csv'
-jsonFilePath = r'data.json'
+csvFilePath = r'members.csv'
+jsonFilePath = r'members.json'
 csv_to_json(csvFilePath, jsonFilePath)
-data.json Output File
-
-[
-    {
-        "a": "25",
-        "b": "84",
-        "c": "com"
-    },
-    {
-        "a": "41",
-        "b": "52",
-        "c": "org"
-    },
-    {
-        "a": "58",
-        "b": "79",
-        "c": "io"
-    },
-    {
-        "a": "93",
-        "b": "21",
-        "c": "co"
-    }
-]

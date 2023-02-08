@@ -1,4 +1,5 @@
-## Zoom API Experiments
+## Zoom API Projects
 
 ###Add Zoom Members
-Script for adding members to 
+Simple python script for adding instructors to Zoom from a list of emails
+Uses the 

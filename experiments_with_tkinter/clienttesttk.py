@@ -2,7 +2,7 @@ import json
 import tkinter as tk
 from zoomus import ZoomClient
 
-client = ZoomClient('npfXjSKLRLaeub5jLP4lYw', 'GJWJzVHDY1aFjWbebS5jCKkbrOSkGghIV1cj')
+client = ZoomClient('key', 'Secret')
 
 app = tk.Tk()
 text = tk.Text(app)
